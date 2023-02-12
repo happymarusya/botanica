@@ -1,38 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fefff4;
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+}
+
+video {
+    width: 100%;
+    object-fit: fill;
+    margin-top: 30px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Philosopher', sans-serif;
+    color: #152015;
+}
+
+.top {
+    color: #152015;
+    font-size: 28px;
+}
+
+.top-button {
+    width: 150px;
+    background-color: #2f482f;
+    color: #d0dcce;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px;
+    box-shadow: 10px 10px 15px 0px #050b149b;
+}
+
+.delivery {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.free {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #4e754e;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.navbar{
+    background-color: #88a693;
+    width: 100vw;
+}
+
+.navbar.fixed {
+    background-color: #88a69363;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all .9s ease-in-out;
+    z-index: 50;
+}
+
+.navbar.fixed .navbar-list {
+    height: 50px;
+}
+
+.navbar_list {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+}
+
+.navbar_list_item {
+    color: #253825;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 25px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Philosopher', sans-serif;
+    cursor: pointer;
+}
+
+.navbar_list_item:hover {
+    color: #ffea06;
+    transition: all .9s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.plants {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+}
+
+.plant-card {
+    padding: 3%;
+    flex-basis: 22%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.imageCard {
+    border-radius: 5px;
+}
+
+.imageCard:hover {
+    animation: image-scale infinite 4s linear;
+    animation-direction: alternate-reverse;
+    cursor: pointer;
+}
+
+@keyframes image-scale {
+    from {
+    transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -moz-transform:scale(1.2); 
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);
+}
+    to {
+    transform:scale(1.0);
+    -ms-transform:scale(1.0);
+    -moz-transform:scale(1.0); 
+    -webkit-transform:scale(1.0);
+    -o-transform:scale(1.0);
+}
+}
+
+.imageCenter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.color {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #88a69363;
+    box-shadow: 10px 10px 15px 0px #050b149b;
+}
+
+.moreLess {
+    background: transparent;
+    border: none;
+    color: #358759;
+    cursor: pointer;
+    font-family: 'Philosopher', sans-serif;
+    text-transform: uppercase;
+}
+
+.moreLess:hover {
+    color: #ffea06;
+    transition: all .9s ease-in-out;
+}
+
+h3, h2, p {
+    font-family: 'Philosopher', sans-serif;
+    color: #253825;
+}
+
+.care {
+    font-size: 24px;
+}
+
+.change {
+    background-color: #2f482f;
+    color: #d0dcce;
+    padding: 10px;
+    border: none;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 18px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 10px 10px 15px 0px #050b149b;
+}
+
+.change:hover {
+    color: #ffea06;
+    transition: all .9s ease-in-out;
+} 
+
+.footer {
+    background: #2f482f;
+    padding: 20px;
+}
+
+.footertop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 20px;
+    border-left: 1px solid #d0dcce;
+}
+
+.footerlink {
+    color: #d0dcce;
+    padding: 8px 20px;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.footfoot {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 12px;
+    color: #d0dcce;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+}
+  
+.bottomline{
+    border-bottom: 1px solid #d0dcce;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.frameimg {
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.frameimg360 {
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.photoplant:hover, .photoplant360:hover{
+        animation: plant-scale infinite 4s linear;
+        animation-direction: alternate-reverse;
+}
+  
+@keyframes plant-scale {
+    from {
+        transform:scale(1.2);
+        -ms-transform:scale(1.2);
+        -moz-transform:scale(1.2); 
+        -webkit-transform:scale(1.2);
+        -o-transform:scale(1.2);
+    }
+    to {
+        transform:scale(1.0);
+        -ms-transform:scale(1.0);
+        -moz-transform:scale(1.0); 
+        -webkit-transform:scale(1.0);
+        -o-transform:scale(1.0);
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.careText {
+    width: 800px;
+}  
+
+.btnMore {
+    background: transparent;
+    border: none;
+    color: #1c442d;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnMore:hover {
+    color: #ffea06;
+    transition: all .9s ease-in-out;
+}
+
+.btn {
+    display: flex;
+    padding: 10px 0 0 0;
+}
+
+.about-container {
+    display: flex; 
+}
+
+.about-foto {
+    padding: 50px;
+    margin-left: 50px;
+}
+
+.about-text {
+    padding: 50px;
+    margin-top: 100px;
+    margin-right: 50px;
+    text-indent: 50px;
+}
+
+.contact {
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
