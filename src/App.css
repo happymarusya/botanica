@@ -209,6 +209,7 @@ h3, h2, p {
     cursor: pointer;
     margin: 10px;
     box-shadow: 10px 10px 15px 0px #050b149b;
+    z-index: 1;
 }
 
 .change:hover {
