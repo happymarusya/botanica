@@ -1,7 +1,7 @@
 
 function Buttons({filteredPlants, setPlants, data}) {
     return (
-        <div className="container">
+        <div className="container buttonsColumn">
             <button className="change" onClick={() => setPlants(data)}>Show All</button>
             <button className="change" onClick={() => filteredPlants("palm")}>Palms</button>
             <button className="change" onClick={() => filteredPlants("succulent")}>Succulents</button>

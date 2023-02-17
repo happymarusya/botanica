@@ -105,6 +105,7 @@ h1 {
     text-transform: uppercase;
     font-family: 'Philosopher', sans-serif;
     cursor: pointer;
+    z-index: 1;
 }
 
 .navbar_list_item:hover {
@@ -344,4 +345,129 @@ h3, h2, p {
     padding: 20px;
     margin-bottom: 50px;
     margin-top: 50px;
+}
+
+@media all and (max-width: 1024px) {
+    .footertop{
+        flex-direction: column;
+    }
+
+    .footerlinks{
+        border-left: none;
+        border-bottom: 1px solid #d0dcce;
+        padding: 20px 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .plant-card {
+        flex-basis: 35%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 800px) {
+    video {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .plant-card {
+        flex-basis:50%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .about-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .careText {
+        width: 500px;
+    }
+
+    .photoplant360 {
+        width: 550px;
+        height: 300px;
+    }
+
+    .about {
+        width: 500px;
+    }
+
+    .about-text {
+        margin-top: -20px;
+        width: 600px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .free {
+        font-size: 10px;
+    }
+
+    .navbar_list_item {
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .care {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    video {
+        height: 300px;
+    }
+
+    .top {
+        font-size: 16px;
+    }
+
+    .top-button {
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .buttonsColumn {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        width: 300px;
+        margin-left: -50px;
+    }
+
+    .small {
+        font-size: 14px;
+    }
+
+    .about-text {
+        width: 300px;
+        text-indent: 0px;
+        margin: 0;
+    }
+
+    .careText {
+        width: 300px;
+    }
+
+    .photoplant360 {
+        width: 300px;
+        height: 180px;
+    }
 }

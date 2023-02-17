@@ -49,7 +49,7 @@ function PlantCare () {
             </div>
             
             <div className='careText'>
-                <p>{ text }</p>
+                <p className='small'>{ text }</p>
             </div>
             <br/> <br/>
         </div>
